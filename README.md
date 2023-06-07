@@ -29,7 +29,7 @@ This is a billing application developed using the Django web framework. It provi
 2. Navigate to the project directory:
 
    ```bash
-   cd billing-application
+   cd bill-master
    ```
 
 3. Create and activate a virtual environment (recommended):
