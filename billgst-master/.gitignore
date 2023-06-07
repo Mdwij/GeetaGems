@@ -1,0 +1,15 @@
+venv
+
+# SQLite
+*.sqlite3
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[co]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python

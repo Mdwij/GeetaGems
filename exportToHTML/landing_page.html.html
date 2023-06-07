@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>landing_page.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #e8bf6a;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+.s4 { color: #bababa;}
+.s5 { color: #e8bf6a;}
+.s6 { color: #bababa;}
+.s7 { color: #a5c261;}
+.s8 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+landing_page.html</font>
+</center></td></tr></table>
+<pre><span class="s0">{% </span><span class="s1">extends </span><span class="s2">&quot;gstbillingapp/base.html&quot; </span><span class="s0">%}</span>
+
+
+<span class="s0">{% </span><span class="s1">load </span><span class="s4">static </span><span class="s0">%}</span>
+<span class="s5">&lt;!doctype </span><span class="s6">html</span><span class="s5">&gt;</span>
+
+<span class="s0">{% </span><span class="s1">block </span><span class="s4">title </span><span class="s0">%}</span>
+<span class="s3">Geeta Gems</span>
+<span class="s0">{% </span><span class="s1">endblock </span><span class="s0">%}</span>
+
+<span class="s0">{% </span><span class="s1">block </span><span class="s4">metatags </span><span class="s0">%}</span>
+<span class="s5">&lt;meta </span><span class="s6">name</span><span class="s7">=&quot;google-site-verification&quot; </span><span class="s6">content</span><span class="s7">=&quot;MJbX1a9Fs1MIE1tnpRnp4At9OzVMxoumTAvOWUlG8-w&quot; </span><span class="s5">/&gt;</span>
+<span class="s5">&lt;link </span><span class="s6">rel</span><span class="s7">=&quot;canonical&quot; </span><span class="s6">href</span><span class="s7">=&quot;https://billgst.in/&quot; </span><span class="s5">/&gt;</span>
+
+<span class="s5">&lt;meta </span><span class="s6">property</span><span class="s7">=&quot;og:title&quot; </span><span class="s6">content</span><span class="s7">=&quot;Geeta Gems&quot; </span><span class="s5">/&gt;</span>
+<span class="s5">&lt;meta </span><span class="s6">property</span><span class="s7">=&quot;og:url&quot; </span><span class="s6">content</span><span class="s7">=&quot;https://billgst.in&quot; </span><span class="s5">/&gt;</span>
+<span class="s5">&lt;meta </span><span class="s6">property</span><span class="s7">=&quot;og:image&quot; </span><span class="s6">content</span><span class="s7">=&quot;https://billgst.in</span><span class="s0">{% </span><span class="s1">static </span><span class="s2">&quot;gstbillingapp/images/screenshot_interface.png&quot; </span><span class="s0">%}</span><span class="s7">&quot; </span><span class="s5">/&gt;</span>
+<span class="s0">{% </span><span class="s1">endblock </span><span class="s0">%}</span>
+
+<span class="s0">{% </span><span class="s1">block </span><span class="s4">content </span><span class="s0">%}</span>
+
+<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;jumbotron&quot;</span><span class="s5">&gt;</span>
+	<span class="s5">&lt;h1 </span><span class="s6">class</span><span class="s7">=&quot;display-3&quot;</span><span class="s5">&gt;</span><span class="s3">Geeta Gems</span><span class="s5">&lt;/h1&gt;</span>
+	<span class="s5">&lt;h2 </span><span class="s6">class</span><span class="s7">=&quot;display-6&quot;</span><span class="s5">&gt;</span><span class="s3">Inventory &amp; invoicing app.</span><span class="s5">&lt;/h2&gt;</span>
+	<span class="s5">&lt;hr </span><span class="s6">class</span><span class="s7">=&quot;my-4&quot;</span><span class="s5">&gt;</span>
+
+	<span class="s5">&lt;p </span><span class="s6">class</span><span class="s7">=&quot;lead&quot;</span><span class="s5">&gt;</span>
+		<span class="s5">&lt;a </span><span class="s6">class</span><span class="s7">=&quot;btn btn-primary btn-lg&quot; </span><span class="s6">href</span><span class="s7">=&quot;</span><span class="s0">{% </span><span class="s1">url </span><span class="s2">'invoice_create' </span><span class="s0">%}</span><span class="s7">&quot; </span><span class="s6">role</span><span class="s7">=&quot;button&quot;</span><span class="s5">&gt;</span><span class="s3">Create Invoice</span><span class="s5">&lt;/a&gt;</span>
+	<span class="s5">&lt;/p&gt;</span>
+<span class="s5">&lt;/div&gt;</span>
+
+<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;row&quot;</span><span class="s5">&gt;</span>
+	<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;col d-flex align-items-stretch&quot;</span><span class="s5">&gt;</span>
+		<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;card text-white bg-primary mb-3&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;card-body&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;h4 </span><span class="s6">class</span><span class="s7">=&quot;card-title&quot;</span><span class="s5">&gt;</span><span class="s3">Simple Interface</span><span class="s5">&lt;/h4&gt;</span>
+			<span class="s5">&lt;img </span><span class="s6">class</span><span class="s7">=&quot;img-fluid&quot; </span><span class="s6">src</span><span class="s7">=&quot;</span><span class="s0">{% </span><span class="s1">static </span><span class="s2">&quot;gstbillingapp/images/screenshot_interface.png&quot; </span><span class="s0">%}</span><span class="s7">&quot; </span><span class="s6">alt</span><span class="s7">=&quot;Simple Interface&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;/div&gt;</span>
+		<span class="s5">&lt;/div&gt;</span>
+	<span class="s5">&lt;/div&gt;</span>
+	<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;col d-flex align-items-stretch&quot;</span><span class="s5">&gt;</span>
+		<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;card text-white bg-primary mb-3&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;card-body&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;h4 </span><span class="s6">class</span><span class="s7">=&quot;card-title&quot;</span><span class="s5">&gt;</span><span class="s3">Customer and Product Search</span><span class="s5">&lt;/h4&gt;</span>
+			<span class="s5">&lt;img </span><span class="s6">class</span><span class="s7">=&quot;img-fluid&quot; </span><span class="s6">src</span><span class="s7">=&quot;</span><span class="s0">{% </span><span class="s1">static </span><span class="s2">&quot;gstbillingapp/images/screenshot_search.png&quot; </span><span class="s0">%}</span><span class="s7">&quot; </span><span class="s6">alt</span><span class="s7">=&quot;Customer and Product Search&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;/div&gt;</span>
+		<span class="s5">&lt;/div&gt;</span>
+	<span class="s5">&lt;/div&gt;</span>
+<span class="s8">&lt;!-- 	&lt;div class=&quot;col d-flex align-items-stretch&quot;&gt; 
+        &lt;div class=&quot;card text-white bg-primary mb-3&quot;&gt; 
+            &lt;div class=&quot;card-body&quot;&gt; 
+            &lt;h4 class=&quot;card-title&quot;&gt;Printable Invoices&lt;/h4&gt; 
+            &lt;ul&gt; 
+                &lt;li&gt;&lt;h5&gt;Clean Invoice Format&lt;/h5&gt;&lt;/li&gt; 
+            &lt;/ul&gt; 
+            &lt;ul&gt; 
+                &lt;li&gt;&lt;h5&gt;Print Invoices directly with one click.&lt;/h5&gt;&lt;/li&gt; 
+            &lt;/ul&gt; 
+            &lt;ul&gt; 
+                &lt;li&gt;&lt;h5&gt;Save Invoices as PDF&lt;/h5&gt;&lt;/li&gt; 
+            &lt;/ul&gt; 
+            &lt;/div&gt; 
+        &lt;/div&gt; 
+    &lt;/div&gt; 
+ --&gt;</span>
+ 	<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;col d-flex align-items-stretch&quot;</span><span class="s5">&gt;</span>
+		<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;card text-white bg-primary mb-3&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;card-body&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;h4 </span><span class="s6">class</span><span class="s7">=&quot;card-title&quot;</span><span class="s5">&gt;</span><span class="s3">Manage Books and Balances</span><span class="s5">&lt;/h4&gt;</span>
+			<span class="s5">&lt;img </span><span class="s6">class</span><span class="s7">=&quot;img-fluid&quot; </span><span class="s6">src</span><span class="s7">=&quot;</span><span class="s0">{% </span><span class="s1">static </span><span class="s2">&quot;gstbillingapp/images/screenshot_books.png&quot; </span><span class="s0">%}</span><span class="s7">&quot; </span><span class="s6">alt</span><span class="s7">=&quot;Manage books and balances&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;/div&gt;</span>
+		<span class="s5">&lt;/div&gt;</span>
+	<span class="s5">&lt;/div&gt;</span>
+
+	 <span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;col d-flex align-items-stretch&quot;</span><span class="s5">&gt;</span>
+		<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;card text-white bg-primary mb-3&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;div </span><span class="s6">class</span><span class="s7">=&quot;card-body&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;h4 </span><span class="s6">class</span><span class="s7">=&quot;card-title&quot;</span><span class="s5">&gt;</span><span class="s3">Easy Inventory Management</span><span class="s5">&lt;/h4&gt;</span>
+			<span class="s5">&lt;img </span><span class="s6">class</span><span class="s7">=&quot;img-fluid&quot; </span><span class="s6">src</span><span class="s7">=&quot;</span><span class="s0">{% </span><span class="s1">static </span><span class="s2">&quot;gstbillingapp/images/screenshot_inventory.png&quot; </span><span class="s0">%}</span><span class="s7">&quot; </span><span class="s6">alt</span><span class="s7">=&quot;Manage inventory easily&quot;</span><span class="s5">&gt;</span>
+			<span class="s5">&lt;/div&gt;</span>
+		<span class="s5">&lt;/div&gt;</span>
+	<span class="s5">&lt;/div&gt;</span>
+<span class="s5">&lt;/div&gt;</span>
+
+
+<span class="s5">&lt;/div&gt;</span>
+
+<span class="s0">{% </span><span class="s1">endblock </span><span class="s0">%}</span>
+
+
+
+</pre>
+</body>
+</html>
