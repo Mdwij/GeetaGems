@@ -23,7 +23,7 @@ This is a billing application developed using the Django web framework. It provi
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/billing-application.git
+   git clone https://github.com/Mdwij/GeetaGems.git
    ```
 
 2. Navigate to the project directory:
